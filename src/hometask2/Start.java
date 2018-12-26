@@ -13,7 +13,7 @@ public class Start {
 
             System.out.println("a + b * ( c / 2 )=  " +Calc.methodCalc3(5,3,4));
 
-            System.out.println("a + b * ( c / 2 )=  " +Calc.methodCalc4(5,3,3));
+            System.out.println("a + b * ( c / 2 )=  " +Calc.methodCalc4(5,2,3));
 
 
         }
