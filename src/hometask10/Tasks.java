@@ -109,6 +109,7 @@ if(a[i]!=b[i]){
         }
         else {
             System.out.println("Массивы имеют разную длину");
+            return false;
         }
         System.out.println("Массивы равны");
         return true;
