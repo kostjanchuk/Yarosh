@@ -11,7 +11,7 @@ public class Start {
 
         System.out.println("Введите число");
         double x = InputKey.inputKey();
-        System.out.println("При быстром делении числа на 4 получим "+FastDivision.bitDivByFour(x));
+        System.out.println("При быстром делении числа на 4 получим " + FastDivision.bitDivByFour(x));
 
     }
 }

@@ -1,4 +1,5 @@
 package hometask5;
+
 public class SeasonOfTheYear {
     public static void firstFunction(int s) {
 
@@ -15,7 +16,7 @@ public class SeasonOfTheYear {
 
     public static void secondFunction(int s) {
 
-        switch (s){
+        switch (s) {
             case 3:
             case 4:
             case 5:

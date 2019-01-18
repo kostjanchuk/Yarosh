@@ -38,30 +38,28 @@ public class Games {
     }
 
 
-    public static void SummOfNumbers(){
-        int d=0;
-        for (int i = 0; i <100 ; i++) {
-            int a = RandomNumbers.getRandom(-10,10);
-            d=d+a;
+    public static void SummOfNumbers() {
+        int d = 0;
+        for (int i = 0; i < 100; i++) {
+            int a = RandomNumbers.getRandom(-10, 10);
+            d = d + a;
         }
-        System.out.println("Сумма случ чисел= "+d);
+        System.out.println("Сумма случ чисел= " + d);
     }
 
 
-    public static void guessTheNumber(){
-        int a = RandomNumbers.getRandom(1,11);
-        while (true){
+    public static void guessTheNumber() {
+        int a = RandomNumbers.getRandom(1, 11);
+        while (true) {
 
             System.out.println("Угадай число от 1 до 10");
             int d = InputKey.inputKey();
-            if (d==a){
+            if (d == a) {
                 System.out.println("Красавчик, ты угадал число");
                 break;
-            }
-            else if(d>a){
+            } else if (d > a) {
                 System.out.println("Число которое следует угадать меньше ");
-            }
-            else {
+            } else {
                 System.out.println("Число которое следует угадать больше");
             }
 

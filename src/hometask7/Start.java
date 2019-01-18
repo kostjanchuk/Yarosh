@@ -6,6 +6,6 @@ public class Start {
         Cycles.summOfNumbers();
         System.out.println("Нечетные числа от 1 до 100");
         Cycles.oddNumbers();
-Age.yearOfBirth();
+        Age.yearOfBirth();
     }
 }

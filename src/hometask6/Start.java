@@ -10,7 +10,7 @@ public class Start {
         System.out.println("Введите число х = ");
         int x = InputKey.inputKey();
         Cycles.factorial(x);
-Cycles.arithmeticProgression();
+        Cycles.arithmeticProgression();
 
     }
 }

@@ -7,19 +7,19 @@ public class Summation {
         int s = 0;
         System.out.println("Введите трехзначное число ");
         int n = InputKey.inputKey();
-         int a = n%10;
-         s = s+a;
+        int a = n % 10;
+        s = s + a;
 
-         n=n/10;
+        n = n / 10;
 
-         a = n%10;
+        a = n % 10;
 
-         s = s +a;
+        s = s + a;
 
-         n = n/10;
+        n = n / 10;
 
-         s =  s +n;
+        s = s + n;
 
-return s;
+        return s;
     }
 }
