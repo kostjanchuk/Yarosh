@@ -31,7 +31,7 @@ public class Tasks {
 
     public static void swapMinMaxElemrts(double a[]) {
 
-        ;
+
         double max = Arrays.maxElement(a);
         double min = Arrays.minElement(a);
 
