@@ -30,13 +30,12 @@ public class Tasks {
 
 
     public static void swapMinMaxElemrts(double a[]) {
-        double c[] = java.util.Arrays.copyOf(a, a.length);
-        double b[] = java.util.Arrays.copyOf(a, a.length);
-        ;
-        double max = Arrays.maxElement(b);
-        double min = Arrays.minElement(c);
 
-        for (int i = 0; i < b.length; i++) {
+        ;
+        double max = Arrays.maxElement(a);
+        double min = Arrays.minElement(a);
+
+        for (int i = 0; i < a.length; i++) {
             if (a[i] == max) {
                 a[i] = min;
 

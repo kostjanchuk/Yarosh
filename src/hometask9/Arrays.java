@@ -4,16 +4,14 @@ import java.sql.SQLOutput;
 
 public class Arrays {
     public static void minElement(int a[]){
-        int min =0;
+        int min =a[0];
         for (int i = 0; i <a.length ; i++) {
-           if (a[i]<=a[1]){
-
-               a[1]=a[i];
+           if (a[i]<=min){
                min = a[i];
            }
            else {
-               a[1]=a[1];
-               min = a[1];
+
+               min = min;
            }
 
         }
@@ -22,16 +20,16 @@ public class Arrays {
 
 
     public static void maxElement(double d[]){
-        double max =0;
+        double max =d[0];
         for (int i = 0; i <d.length ; i++) {
-            if (d[i]>=d[1]){
+            if (d[i]>=max){
 
-                d[1]=d[i];
+
                 max = d[i];
             }
             else {
-                d[1]=d[1];
-                max = d[1];
+
+                max = max;
             }
 
         }

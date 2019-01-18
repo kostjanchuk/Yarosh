@@ -1,18 +1,17 @@
 package Utilities;
 
 public class Arrays {
-    public static double minElement(double mn[]) {
-        double min =0;
-        for (int i = 0; i <mn.length ; i++) {
+    public static double minElement(double d[]) {
+        double min =d[0];
+        for (int i = 0; i <d.length ; i++) {
+            if (d[i]<=min){
 
-            if (mn[i]<=mn[0]){
 
-                mn[0]=mn[i];
-                min = mn[i];
+                min = d[i];
             }
             else {
-                mn[0]=mn[0];
-                min = mn[0];
+
+                min = min;
             }
 
         }
@@ -20,18 +19,17 @@ public class Arrays {
     }
 
 
-    public static double maxElement(double mx[]) {
-        double max = 0;
-        for (int i = 0; i <mx.length ; i++) {
+    public static double maxElement(double d[]) {
+        double max =d[0];
+        for (int i = 0; i <d.length ; i++) {
+            if (d[i]>=max){
 
-            if (mx[i]>=mx[0]){
 
-                mx[0]=mx[i];
-                max = mx[i];
+                max = d[i];
             }
             else {
-                mx[0]=mx[0];
-                max = mx[0];
+
+                max = max;
             }
 
         }
