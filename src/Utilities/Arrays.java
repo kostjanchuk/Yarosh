@@ -3,11 +3,13 @@ package Utilities;
 public class Arrays {
     public static double minElement(double d[]) {
         double min = d[0];
+        double indx = 0;
         for (int i = 0; i < d.length; i++) {
             if (d[i] <= min) {
 
-
                 min = d[i];
+
+
             } else {
 
                 min = min;
@@ -15,6 +17,26 @@ public class Arrays {
 
         }
         return min;
+    }
+
+
+    public static int minIndex(int d[]) {
+        int min = d[0];
+        int indx = 0;
+        for (int i = 0; i < d.length; i++) {
+            if (d[i] <= min) {
+                min = d[i];
+                indx = i;
+
+
+            } else {
+
+                min = min;
+                indx = indx;
+            }
+
+        }
+        return indx;
     }
 
 
@@ -36,6 +58,14 @@ public class Arrays {
 
 
     public static void output(double d[]) {
+        for (int i = 0; i < d.length; i++) {
+            System.out.print(d[i] + " ");
+        }
+        System.out.println();
+    }
+
+
+    public static void output(char d[]) {
         for (int i = 0; i < d.length; i++) {
             System.out.print(d[i] + " ");
         }
