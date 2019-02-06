@@ -8,6 +8,6 @@ public class Train extends Vehicle {
     @Override
     public void move() {
         System.out.println("The train is riding");
-        ;
+
     }
 }
