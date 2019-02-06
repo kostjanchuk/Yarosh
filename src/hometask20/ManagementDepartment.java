@@ -2,8 +2,6 @@ package hometask20;
 
 public class ManagementDepartment {
     private int counter2;
-    private int counter3;
-    private int counter4;
     private int counter;
     private Employee[] employees;
     private Employee[] genderEmployees = new Employee[15];
@@ -42,11 +40,11 @@ public class ManagementDepartment {
 
 
     public Employee[] filterOlder(int age) {
-        counter4 = 0;
+        counter2 = 0;
 
         for (int i = 0; i < counter; i++) {
             if ((2019 - employees[i].getYear()) > age) {
-                olderEmployees[counter4++] = employees[i];
+                olderEmployees[counter2++] = employees[i];
             } else {
                 olderEmployees[i] = null;
             }
@@ -56,17 +54,15 @@ public class ManagementDepartment {
 
 
     public Employee[] filterYounger(int age) {
-        counter3 = 0;
+        counter2 = 0;
         for (int i = 0; i < counter; i++) {
             if ((2019 - employees[i].getYear()) < age) {
-                youngerEmployees[counter3++] = employees[i];
+                youngerEmployees[counter2++] = employees[i];
             } else {
                 youngerEmployees[i] = null;
 
             }
         }
-
-
         return youngerEmployees;
     }
 
@@ -79,16 +75,11 @@ public class ManagementDepartment {
     }
 
     public void showFilterArr(Employee a[]) {
-        int c = 0;
-
-        for (int j = 0; j < a.length; j++) {
-            if (a[j] != null) {
-                c++;
+        for (int i = 0; i < a.length; i++) {
+            if(a[i]!=null) {
+                System.out.println("Работник с именем " + a[i].getName() + ".  Зарплата " + a[i].getSalary());
             }
-        }
-        for (int i = 0; i < c; i++) {
-            System.out.println("Работник с именем " + a[i].getName() + ".  Зарплата " + a[i].getSalary());
-        }
+            }
 
 
     }

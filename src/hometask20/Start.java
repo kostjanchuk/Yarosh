@@ -20,6 +20,19 @@ public class Start {
 
 
 
+        managementDepartment1.add(employee1);
+        managementDepartment1.add(employee2);
+        managementDepartment1.add(employee3);
+        managementDepartment1.add(employee4);
+        managementDepartment1.add(employee5);
+
+
+
+
+        managementDepartment1.add(employee1);
+        
+
+
 
         System.out.println("На работу приняли сотрудников");
         managementDepartment1.showAllEmployee();
