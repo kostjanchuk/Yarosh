@@ -1,10 +1,12 @@
 package hometask20;
 
+
 public class ManagementDepartment {
+    final static int CURRENT_YEAR = 2019;
     private int counter2;
     private int counter;
-    private Employee[] employees;
 
+    private Employee[] employees;
 
 
 
@@ -44,7 +46,7 @@ public class ManagementDepartment {
         counter2 = 0;
 
         for (int i = 0; i < counter; i++) {
-            if ((2019 - employees[i].getYear()) > age) {
+            if ((CURRENT_YEAR - employees[i].getYear()) > age) {
                 olderEmployees[counter2++] = employees[i];
             } else {
                 olderEmployees[i] = null;
@@ -58,7 +60,7 @@ public class ManagementDepartment {
       Employee[] youngerEmployees = new Employee[counter];
         counter2 = 0;
         for (int i = 0; i < counter; i++) {
-            if ((2019 - employees[i].getYear()) < age) {
+            if ((CURRENT_YEAR - employees[i].getYear()) < age) {
                 youngerEmployees[counter2++] = employees[i];
             } else {
                 youngerEmployees[i] = null;
